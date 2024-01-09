@@ -1,0 +1,209 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+}
+
+header > ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+header > h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F9FAF8;
+}
+
+/* MAIN CONTAINER */ 
+
+.mainContainer {
+  display: flex;
+  justify-content:center;
+  flex: 1 1 0;
+  color: #F9FAF8;
+
+}
+
+.mainContainer > section {
+  text-align: left;
+  width: 500px;
+  padding: 160px 0 0 80px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.mainContainer > img {
+  width: 600px;
+  height: auto;
+}
+
+/* FACT CONTAINER */
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+  padding: 60px;
+  text-align: center;
+}
+
+.factContainer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 140px;
+  
+}
+
+.factContainer img {
+  max-height: 300px;
+}
+
+.factContainer p {
+  width: 200px;
+  line-height: 15px;
+  padding-top: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* QUOTE CONTAINER */
+
+.quoteContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  margin-top: 100px;
+  padding: 60px 250px 50px;
+}
+
+.quoteContainer p {
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 50px;
+  text-align: center;
+}
+
+.quoteContainer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: end;
+}
+
+
+/* ADOPT CONTAINER */
+
+.adoptContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  margin: 100px 0 100px 600px;
+  padding: 20px 0;
+  border: 1px solid #3882F6;
+  border-radius: 10px;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  line-height: 15px;
+  width: 800px;
+  height: auto;
+  text-align: left;
+
+}
+
+.adoptContainer button {
+  border: 2px solid #F9FAF8;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1f2937;
+  padding: 10px;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+header, .mainContainer {
+  background-color: #1f2937;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul {
+  list-style-type: none;
+}
+
+a, p {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+
+a:hover {
+  color: #F9FAF8;
+  font-weight: 500;
+  cursor:grab;
+}
+
+button {
+  background-color: #3882f6;
+  color: #F9FAF8;
+  padding: 10px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: #1655b9;
+}
